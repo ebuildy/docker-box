@@ -1,7 +1,10 @@
-# box
+![](https://img.shields.io/docker/pulls/ebuildy/box.svg?style=for-the-badge)
+
 Docker image with Box: an application for building and managing Phars.
 
-See https://github.com/box-project/box2
+* https://github.com/box-project/box2    The phar builder project: box
+* https://github.com/ebuildy/docker-box  The Docker image project
+* https://hub.docker.com/r/ebuildy/box/  The Docker image at Docker hub
 
 # Base image
 
