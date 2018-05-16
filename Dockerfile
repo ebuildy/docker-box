@@ -4,8 +4,7 @@ ADD src /opt/box2
 
 RUN echo "memory_limit=-1" > "$PHP_INI_DIR/conf.d/memory-limit.ini" && \
     echo "date.timezone=${PHP_TIMEZONE:-UTC}" > "$PHP_INI_DIR/conf.d/date_timezone.ini" && \
-    echo "phar.readonly=off" >> "$PHP_INI_DIR/conf.d/phar.ini" && \
-    echo "auto_prepend_file=/opt/box2/proxy.php" >> "$PHP_INI_DIR/conf.d/phar.ini"
+    echo "phar.readonly=off" >> "$PHP_INI_DIR/conf.d/phar.ini"
 
 RUN curl -LSs https://box-project.github.io/box2/installer.php | php && \
     mv box.phar /usr/local/bin/box && \

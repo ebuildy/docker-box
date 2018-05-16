@@ -11,10 +11,14 @@ See https://github.com/box-project/box2
 * alpine 3.7
 * php 7.2.5
 
-# Proxy support
+# Environment variables
 
-Proxy settings defined from env. are forwarded to php, via a script auto prepended (see Dockerfile).
+Following variables are used to build a default ``box.json`` if you dont provide one:
+
+* BOX_MAIN -> the entry php file
+* BOX_DIR -> list of directories to include
+* BOX_OUTPUT -> output file name
 
 # Usage
 
-``docker run -v MY_APP:/app ebuildy/box build -c box.json``
+``docker run -v MY_APP:/app -e BOX_MAIN=console.php -e BOX_DIR=src,vendor -e BOX_OUTPUT=console ebuildy/box build``
