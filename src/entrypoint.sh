@@ -1,5 +1,5 @@
 #!/bin/sh
-set -ex
+set -e
 
 if [ -f "./box.json" ] || [ -f "./box.json.dist" ] ; then
   exec box "$@"
