@@ -1,0 +1,6 @@
+{
+  "directories": BOX_DIR,
+  "stub": true,
+  "main": "BOX_MAIN",
+  "output": "BOX_OUTPUT"
+}
